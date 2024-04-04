@@ -24,7 +24,6 @@ v_name1 :='을지문덕' ; -- 한글 문자열
 dbms_output.put_line(rpad(v_name1,9)||':'||lengthb(v_name1)||'바이트');
 dbms_output.put_line(char(9));  -- 탭 문자 (빈 줄 출력용)
 
-
 --바이트 단위
 dbms_output.put_line('v_name2 varchar(100)');
 dbms_output.put_line('=================');
@@ -33,8 +32,6 @@ dbms_output.put_line(rpad(v_name2,9)||':'||lengthb(v_name2)||'바이트');
 v_name2 :='을지문덕' ; -- 한글 문자열 
 -- '을지문덕'(12바이트)을 v_name2(8바이트)에 저장할 수 없어서 문제가 발생하는 줄
 dbms_output.put_line(rpad(v_name2,9)||':'||lengthb(v_name2)||'바이트');
-
-
 
 END;
 /
