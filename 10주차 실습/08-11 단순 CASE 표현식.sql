@@ -2,12 +2,12 @@ SET ECHO ON
 SET TAB OFF
 SET SERVEROUTPUT ON
 
-REM �ܼ� CASE ǥ���� (Simple CASE expression)
+REM ´단순 CASE 표현식 (Simple CASE expression)
 DECLARE
 v_BOOL  BOOLEAN := TRUE;
 v_STR STRING(100);
 BEGIN
---�ܼ� CASE ǥ����(Simple CASE expression)
+--´단순 CASE 표현식(Simple CASE expression)
 v_STR := CASE v_BOOL WHEN TRUE THEN 'v_BOOL is TRUE'
 WHEN FALSE THEN 'v_BOOL is FALSE'
 ELSE 'v_BOOL is NULL'
