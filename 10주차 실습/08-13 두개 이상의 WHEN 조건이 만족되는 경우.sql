@@ -2,7 +2,7 @@ SET ECHO ON
 SET TAB OFF
 SET SERVEROUTPUT ON
 
-REM Á¶»ç CASE Ç¥Çö½ÄÀ¸·Î º¯°æ (Searched CASE expression)
+REM ì¡°ì‚¬ CASE í‘œí˜„ì‹ìœ¼ë¡œ ë³€ê²½ (Searched CASE expression)
 DECLARE
 v_BOOL  BOOLEAN := TRUE;
 v_TRUE BOOLEAN := TRUE;
