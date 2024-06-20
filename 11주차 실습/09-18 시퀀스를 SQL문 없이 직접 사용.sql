@@ -2,21 +2,21 @@ SET ECHO ON
 SET TAB OFF
 SET SERVEROUTPUT ON
 
-REM ½ÃÄö½º emp_seq°¡ Á¸ÀçÇÑ´Ù¸é »èÁ¦
+REM ì‹œí€€ìŠ¤ emp_seqê°€ ì¡´ìž¬í•œë‹¤ë©´ ì‚­ì œ
 DROP SEQUENCE emp_seq;
 
-REM ½ÃÄö½º emp_seq »ý¼º
+REM ì‹œí€€ìŠ¤ emp_seq ìƒì„±
 CREATE SEQUENCE emp_seq;
 
 PAUSE
 
-REM ½ÃÄö½º¸¦ SQL¹® ¾øÀÌ Á÷Á¢ »ç¿ë
+REM ì‹œí€€ìŠ¤ë¥¼ SQLë¬¸ ì—†ì´ ì§ì ‘ ì‚¬ìš©
 DECLARE
     v_seq_value NUMBER;
 BEGIN
---SQL ¾øÀÌ ½ÃÄö½º¸¦ Á÷Á¢ »ç¿ëÇÏ´Â ¹æ¹ý
+--SQL ì—†ì´ ì‹œí€€ìŠ¤ë¥¼ ì§ì ‘ ì‚¬ìš©í•˜ëŠ” ë°©ë²•
 v_seq_value := emp_seq.NEXTVAL;
 
-    dbms_output.put_line('½ÃÄö½º °ª :' || TO_CHAR(v_seq_value)); 
+    dbms_output.put_line('ì‹œí€€ìŠ¤ ê°’ :' || TO_CHAR(v_seq_value)); 
 END;
 /
