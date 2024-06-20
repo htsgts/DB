@@ -12,5 +12,5 @@ x := 'SMITH' ; print_boolean(Q'['SMITH' LIKE 's%'   ]', x LIKE 's%');
 x := 'SMITH' ; print_boolean(Q'['SMITH' NOT LIKE 's%'   ]', x NOT LIKE 's%');
 x := NULL ; print_boolean(Q'[NULL LIKE 'A'   ]', x LIKE 'A');
 x := NULL ; print_boolean(Q'[NULL NOT LIKE 'A'   ]', x NOT LIKE 'A');
-x := 'ÇÑ±Û' ; print_boolean(Q'['ÇÑ±Û' LIKE '__'   ]', 'ÇÑ±Û' LIKE '__');
+x := 'í•œê¸€' ; print_boolean(Q'['í•œê¸€' LIKE '__'   ]', 'í•œê¸€' LIKE '__');
 END;
